@@ -1,0 +1,111 @@
+<!-- PHP Forms Examples -->
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="lab9.css">
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  .entry {
+    background-color: silver;
+    overflow: hidden;
+    padding: 10px;
+    border: 2px black solid;
+    margin-top: 10px;
+  }
+  .entry img {
+    float:right;
+    height: 200px;
+    margin:10px;
+    border: solid 1px black;
+  }
+  #container {
+    width: 80%;
+    padding: 10px;
+    background-color: LightSkyBlue;
+    margins: auto;
+    border: solid 5px black;
+    font-size: 1.25em;
+  }
+  h1 { text-align: center;}
+
+  input[type="submit"] {
+
+      font-size: 1.5em;
+  }
+
+</style>
+<body>
+<div id="container">
+<h1> Cat Fail Video T-Shirt </h1>
+<div class="entry">
+  <p style="color:blue">
+<img alt="tshirt" src="tshirt.jpg">
+Show your friends how much the Internet means to you with your very own Cat Fail Video T-Shirt.</p>
+</div>
+
+
+<h2> Order Information </h2>
+<!-- start the form tag here http://localhost/orderConfirmation.php-->
+<form action="http://localhost/test.php/Lab9/orderConfirmation.php" method="get">
+<div class="entry">
+  <!-- ADD IN YOUR hTML FORM MARKUP HERE -->
+  Select color:
+  <select name="color">
+        <option>Black</option>
+        <option>Red</option>
+        <option>Green</option>
+        <option selected="selected">White</option>
+        <option>Blue</option>
+  </select>
+  <br>
+  <br>
+  Select shirt size:
+  <select name="sizeandprice">
+        <option>Small - $9.99</option>
+        <option>Medium - $10.99</option>
+        <option selected="selected">Large - $11.99</option>
+        <option>X-Large - $12.99</option>
+  </select>
+  <br>
+  <br>
+  Is this a gift?
+  <input type="checkbox" name="gift"><!-- <input type="checkbox" name="vehicle" value="Bike"> bike -->
+  <br>
+  <br>
+  Write your gift message here:
+  <br>
+  <br>
+  <textarea name="message" rows="5" cols="50">
+       Type your message here.
+  </textarea>
+
+</div>
+<h2> Payment Information </h2>
+<div class="entry">
+  <!-- ADD IN YOUR hTML FORM MARKUP HERE -->
+  <fieldset>
+        <legend>Credit Cards Details</legend>
+        <input type="radio" name="cardtype" value="visa" checked="checked"> Visa
+        <input type="radio" name="cardtype" value="mastercard">MasterCard
+        <input type="radio" name="cardtype" value="discover">Discover
+        <br>
+        Name on credit card:<br>
+        <input type="text" name="name" max="40" size="70%"><br>
+        Credit Card Number:<br>
+        <input type="text" name="cardnumber" max="40" size="70%"><br>
+        Experation Date:<br>
+        <input type="date" name="date" max="14" size="40%">
+  </fieldset>
+
+</div>
+<h2> Confirm Order </h2>
+  <!-- ADD IN YOUR hTML FORM MARKUP HERE -->
+  <input type="reset" value="Reset Order">
+  <input type="submit" value="Submit Order">
+<p> Superman </p>
+</div> <!-- end container div -->
+</form>
+</body>
+</html>
