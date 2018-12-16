@@ -1,5 +1,6 @@
 # Orderpage
-This project shows how to use HTML Forms and apply PHP programming to print out all the details passed from the form.
+This project shows how to use HTML Forms and apply PHP programming to print out all the details passed from the form. 
+Continue basic file I/O in PHP
 
 
 For every order, write to the file “orders.txt” the following output: 
